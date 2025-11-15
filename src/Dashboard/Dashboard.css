@@ -1,6 +1,9 @@
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+}
+
+.bodyWrapper {
     margin-left: 15%;
 }
 
@@ -17,9 +20,9 @@ body {
 #createNewQuizWrapper {
     text-align: center;
     background-color: hsl(0, 0%, 96%);
-    border-radius: 10px;
-    width: 50%;
-    height: 30vh;
+    border-radius: 20px;
+    width: 90%;
+    height: 35vh;
 }
 
 #createNewQuizContainer {
@@ -31,11 +34,13 @@ body {
 #mySetsMessageWrapper {
     margin-top: 3%;
     margin-left: 5%;
+    text-align: center;
+    margin-top: 5%;
 }
 
 #mySetsMessage {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .dashboardMenu {
@@ -67,7 +72,50 @@ body {
 }
 
 #dashboardMenuHome {
-    margin-top: 15%;
+    margin-top: -5%;
     background-color: hsl(240, 100%, 95%);
     border-left: 4px solid hsl(240, 100%, 60%);
+    text-indent: -3%;
+}
+
+#dashboardMenuLogo {
+    width: 70%;
+    margin-top: -12%;
+}
+
+#createNewQuizDescription {
+    font-weight: 500;
+    font-size: 1.4rem;
+    justify-self: left;
+    margin-left: 5%;
+    font-weight: 450;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.createNewQuizButtons {
+    background-color: white;
+    border: none;
+    padding: 5% 5%;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 42%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 3%;
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+.createNewQuizButtons:hover {
+    background-color: hsl(240, 100%, 95%);
+    border: 1px solid hsl(240, 100%, 65%);
+}
+
+#setDecorImg {
+    width: 7%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    opacity: 0.7;
 }
