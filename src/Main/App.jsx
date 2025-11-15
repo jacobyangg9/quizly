@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import '../Main/App.css'
+import { Routes, Route } from 'react-router-dom'
 
 import Home from '../Home/Home.jsx'
-import Create from '../Create/Create.jsx'
+import Dashboard from '../Dashboard/Dashboard.jsx'
 
 function App() {
 
   return (
-    <>
-      <Home />
-      <Create />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
+    </Routes>
   )
 }
 
