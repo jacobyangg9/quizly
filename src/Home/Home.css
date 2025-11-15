@@ -5,13 +5,13 @@
 }
 
 #introSignInText {
-    font-size: 20px;
+    font-size: 1.25em;
     margin-bottom: 1.5%;
     font-weight: 400;
 }
 
 #introSignInSmallText {
-    font-size: 14px;
+    font-size: 0.85em;
     color: hsl(0, 0%, 20%);
     font-weight: 300;
 }
