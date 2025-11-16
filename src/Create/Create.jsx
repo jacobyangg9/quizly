@@ -1,9 +1,12 @@
-import './Create.css';
+import styles from '../Create/Create.module.css';
 
 function Create() {
     return (
         <>
-            <h1>Hello world</h1>
+            <div className={styles.createHeader}>
+                <h1>Create a new set</h1>
+                <button>Create</button>
+            </div>
         </>
     )
 }

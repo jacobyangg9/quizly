@@ -1,4 +1,4 @@
-import '../Home/Home.css'
+import styles from '../Home/Home.module.css'
 import { useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 
@@ -9,11 +9,11 @@ function Home() {
 
     return (
         <>
-            <div className="homeBody">
-                <h1 id="introSignInText">Sign in to Quizly</h1>
-                <p id="introSignInSmallText">Continue with Google</p>
-                <div className="signInButtonWrapper">
-                    <GoogleLogin  id="temporarySignInButton" onSuccess={navigateToDashboard} onError={() => alert("Login failed")}/>
+            <div className={styles.homeBody}>
+                <h1 id={styles.introSignInText}>Sign in to Quizly</h1>
+                <p id={styles.introSignInSmallText}>Continue with Google</p>
+                <div className={styles.signInButtonWrapper}>
+                    <GoogleLogin  id={styles.temporarySignInButton} onSuccess={navigateToDashboard} onError={() => alert("Login failed")}/>
                 </div>
             </div>
         </>

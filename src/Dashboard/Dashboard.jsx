@@ -1,4 +1,4 @@
-import './Dashboard.css'
+import styles from '../Dashboard/Dashboard.module.css'
 import quizlyLogo from '../Assets/quizlyLogo.png'
 import paperPlane from '../Assets/paperPlane.png'
 import plus from '../Assets/plus.png'
@@ -11,37 +11,37 @@ function Dashboard() {
 
     return(
         <>
-            <div className="dashboardMenu">
-                <div id="dashboardMenuLogoWrapper">
-                    <h1 id="dashboardMenuLogo">Quizly</h1>
+            <div className={styles.dashboardMenu}>
+                <div id={styles.dashboardMenuLogoWrapper}>
+                    <h1 id={styles.dashboardMenuLogo}>Quizly</h1>
                 </div>
-                <button className="dashboardMenuButtons" id="dashboardMenuHome">Home</button>
-                <button className="dashboardMenuButtons">News</button>
-                <button className="dashboardMenuButtons">About</button>
-                <button className="dashboardMenuButtons">Support</button>
+                <button className={styles.dashboardMenuButtons} id={styles.dashboardMenuHome}>Home</button>
+                <button className={styles.dashboardMenuButtons}>News</button>
+                <button className={styles.dashboardMenuButtons}>About</button>
+                <button className={styles.dashboardMenuButtons}>Support</button>
             </div>
-            <div className="bodyWrapper">
-                <div id="welcomeMessageWrapper">
-                    <h1 id="welcomeMessage">Welcome, Jacob!</h1>
+            <div className={styles.bodyWrapper}>
+                <div id={styles.welcomeMessageWrapper}>
+                    <h1 id={styles.welcomeMessage}>Welcome, Jacob!</h1>
                 </div>
-                <div id="createNewQuizContainer">
-                    <div id="createNewQuizWrapper">
-                        <h1 id="createNewQuizDescription">Choose how you want to get started:</h1>
-                        <div className="createNewQuizButtonsWrapper">
-                            <button className="createNewQuizButtons" id="createNewQuizManualButton" onClick={navigateToCreate}>
-                                <img src={plus} id="createNewQuizPlus"></img>
+                <div id={styles.createNewQuizContainer}>
+                    <div id={styles.createNewQuizWrapper}>
+                        <h1 id={styles.createNewQuizDescription}>Choose how you want to get started:</h1>
+                        <div className={styles.createNewQuizButtonsWrapper}>
+                            <button className={styles.createNewQuizButtons} id={styles.createNewQuizManualButton} onClick={navigateToCreate}>
+                                <img src={plus} id={styles.createNewQuizPlus}></img>
                                 Manually Create
                                 </button>
-                            <button className="createNewQuizButtons" id="createNewQuizImportButton">
-                                <img src={fileInport} id="createNewQuizImport"></img>
+                            <button className={styles.createNewQuizButtons} id={styles.createNewQuizImportButton}>
+                                <img src={fileInport} id={styles.createNewQuizImport}></img>
                                 Import from CSV File
                             </button>
                         </div>
                     </div>
                 </div>
-                <div id="mySetsMessageWrapper">
-                    <img src={paperPlane} id="setDecorImg"></img>
-                    <h1 id="mySetsMessage">Create a Set</h1>
+                <div id={styles.mySetsMessageWrapper}>
+                    <img src={paperPlane} id={styles.setDecorImg}></img>
+                    <h1 id={styles.mySetsMessage}>Create a Set</h1>
                     <p>Start by importing or creating your first set above.</p>
                 </div>
             </div>
