@@ -16,20 +16,8 @@
     font-weight: 300;
 }
 
-#temporarySignInButton {
-    background-color: white;
-    border: 1.3px solid hsl(0, 0%, 80%);
-    padding: 10px 30px;
-    border-radius: 5px;
+.signInButtonWrapper {
+    display: flex;
+    justify-content: center;
     margin-top: 2%;
-    cursor: pointer;
-    transition: border 0.5s ease;
-    transition: background-color 1s ease;
-}
-
-#temporarySignInButton:hover {
-    border: 1.3px solid hsl(240, 100%, 85%);
-    background-color: hsl(240, 100%, 96%);
-    transition: border 0.5s ease;
-    transition: background-color 1s ease;
 }
