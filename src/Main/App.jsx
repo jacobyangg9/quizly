@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Home from '../Home/Home.jsx'
 import Dashboard from '../Dashboard/Dashboard.jsx'
+import Create from '../Create/Create.jsx'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/create" element={<Create />}/>
     </Routes>
   )
 }

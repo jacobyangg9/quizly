@@ -3,8 +3,12 @@ import quizlyLogo from '../Assets/quizlyLogo.png'
 import paperPlane from '../Assets/paperPlane.png'
 import plus from '../Assets/plus.png'
 import fileInport from '../assets/file-import.png'
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
+    const navigate = useNavigate();
+    const navigateToCreate = () => navigate("/create");
+
     return(
         <>
             <div className="dashboardMenu">
@@ -12,6 +16,8 @@ function Dashboard() {
                     <h1 id="dashboardMenuLogo">Quizly</h1>
                 </div>
                 <button className="dashboardMenuButtons" id="dashboardMenuHome">Home</button>
+                <button className="dashboardMenuButtons">News</button>
+                <button className="dashboardMenuButtons">About</button>
                 <button className="dashboardMenuButtons">Support</button>
             </div>
             <div className="bodyWrapper">
@@ -22,7 +28,7 @@ function Dashboard() {
                     <div id="createNewQuizWrapper">
                         <h1 id="createNewQuizDescription">Choose how you want to get started:</h1>
                         <div className="createNewQuizButtonsWrapper">
-                            <button className="createNewQuizButtons" id="createNewQuizManualButton">
+                            <button className="createNewQuizButtons" id="createNewQuizManualButton" onClick={navigateToCreate}>
                                 <img src={plus} id="createNewQuizPlus"></img>
                                 Manually Create
                                 </button>
