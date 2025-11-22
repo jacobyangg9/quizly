@@ -14,6 +14,7 @@ function Create() {
                 </div>
                 <div className={styles.statsWrapper}>
                     <input className={styles.titleInputField} placeholder='Title'/>
+                    <input className={styles.titleInputField} placeholder="Add a description... "></input>
                 </div>
             </div>
         </>
