@@ -56,10 +56,19 @@
     box-sizing: border-box;
     padding-left: 2%;
     margin-bottom: 1%;
+    color: hsl(240, 100%, 10%);;
+    font-family: inherit;
 }
 
 .titleInputField:focus {
     outline: none;
     box-shadow: 0 0 12px hsl(240, 100%, 95%), 0 0 24px hsl(240, 100%, 95%), 0 0 36px hsl(240, 100%, 95%);
 
+}
+
+#descriptionInputField {
+    height: 5rem;
+    vertical-align: top;
+    padding-top: 1%;
+    font-family: inherit;
 }

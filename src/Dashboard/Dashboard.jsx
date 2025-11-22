@@ -32,7 +32,7 @@ function Dashboard() {
                                 <img src={plus} id={styles.createNewQuizPlus}></img>
                                 Manually Create
                                 </button>
-                            <button className={styles.createNewQuizButtons} id={styles.createNewQuizImportButton}>
+                            <button className={styles.createNewQuizButtons} id={styles.createNewQuizImportButton} onClick={()=>alert("Import feature coming soon!")}>
                                 <img src={fileInport} id={styles.createNewQuizImport}></img>
                                 Import from CSV File
                             </button>
