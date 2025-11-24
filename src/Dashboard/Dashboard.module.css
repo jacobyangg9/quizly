@@ -80,6 +80,9 @@ body {
 
 #dashboardMenuHome {
     margin-top: -5%;
+}
+
+.activeMenuButton {
     background-color: hsl(240, 100%, 95%);
     border-left: 4px solid hsl(240, 100%, 60%);
     text-indent: -3%;
@@ -167,4 +170,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.newsWrapper,
+.aboutWrapper,
+.supportWrapper {
+    margin-left: 15%;
 }
