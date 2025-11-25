@@ -5,6 +5,7 @@ function Create() {
     
     const [cards, setCards] = useState([{ term: "", definition: "" }]);
 
+
     return (
         <>
             <div className={styles.createContainer}>
@@ -23,9 +24,13 @@ function Create() {
 
                 {cards.map((card, index) => (
                     <div key={index} className={styles.flashcardWrapper}>
-                        <h1>HELLO WORLD</h1>
+                        <input placeholder="Enter term" className={styles.flashcardInput} id={styles.flashcardTermInput}></input>
+                        <input placeholder="Enter definition" className={styles.flashcardInput} id={styles.flashcardDefInput}></input>
                     </div>
                 ))}
+                <div className={styles.addCardWrapper}>
+                    <button className={styles.addCard}>Add Card</button>
+                </div>
             </div>
         </>
     )
