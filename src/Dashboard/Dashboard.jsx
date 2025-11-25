@@ -30,15 +30,16 @@ function Dashboard() {
                     className={`${styles.dashboardMenuButtons} ${activeSection === 'news' ? styles.activeMenuButton : ""}`} onClick={()=>toggleSection("news")}>News</button>
 
                 <button 
-                    className={`${styles.dashboardMenuButtons} ${activeSection === 'about' ? styles.activeMenuButton : ""}`} onClick={()=>toggleSection("about")}>About</button>
+                    className={`${styles.dashboardMenuButtons} ${activeSection === 'upgrade' ? styles.activeMenuButton : ""}`} onClick={()=>toggleSection("upgrade")}>Upgrade</button>
 
                 <button 
                     className={`${styles.dashboardMenuButtons} ${activeSection === 'support' ? styles.activeMenuButton : ""}`} onClick={()=>toggleSection("support")}>Support</button>
             </div>
-            
+
+            {/* BODY */}
             <div className={styles.bodyWrapper} style={activeSection === 'home' ? {} : { display: 'none' }}>
                 <div id={styles.welcomeMessageWrapper}>
-                    <h1 id={styles.welcomeMessage}>Welcome, Jacob!</h1>
+                    <h1 className={styles.welcomeMessage}>Welcome, Jacob!</h1>
                 </div>
                 <div id={styles.createNewQuizContainer}>
                     <div id={styles.createNewQuizWrapper}>
@@ -61,14 +62,34 @@ function Dashboard() {
                     <p>Start by importing or creating your first set above.</p>
                 </div>
             </div>
+            {/* NEWS */}
             <div className={styles.newsWrapper} style={activeSection === 'news' ? {} : { display: 'none' }}>
-                <h1>Latest News</h1>
+                <h1 className={styles.welcomeMessage}>Latest News</h1>
+                <div className={styles.newsContentWrapper}>
+                    <p><b>11.24.25</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Launching Quizly, a new public site for creating and sharing quizzes.</p>
+                </div>
             </div>
-            <div className={styles.aboutWrapper} style={activeSection === 'about' ? {} : { display: 'none' }}>
-                <h1>About Quizly</h1>
+
+            {/* UPGRADE */}
+            <div className={styles.upgradeWrapper} style={activeSection === 'upgrade' ? {} : { display: 'none' }}>
+                    <h1 className={styles.welcomeMessage}>Take your learning to the next level</h1>
+                    <div className={styles.upgradePlansWrapper}>
+                        <div className={styles.upgradePlanBox}>
+                            <h2 className={styles.upgradePlanBoxText}>Super</h2>
+                            <p>Access to more premium assets</p>
+                        </div>
+                        <div className={styles.upgradePlanBox}>
+                            <h2 className={styles.upgradePlanBoxText}>Max</h2>
+                            <p>Access to unlimited premium assets</p>
+                        </div>
+                    </div>
             </div>
+
+            {/* SUPPORT */}
             <div className={styles.supportWrapper} style={activeSection === 'support' ? {} : { display: 'none' }}>
-                <h1>Support</h1>
+                <h1 className={styles.welcomeMessage}>Support</h1>
+                <p className={styles.supportDescription}>Need help or have questions? Our support team is here to assist you with any issues or inquiries you may have. By clicking the button, your email client will open, allowing you to send us a message directly. We aim to respond as quickly as possible to provide the guidance you need. Don’t hesitate to reach out—our team is ready to help you every step of the way.</p>
+                <button onClick={()=> window.location.href="mailto:jacob.yangg9@gmail.com"} id={styles.supportButton}>Contact Support</button>
             </div>
             
         </>
