@@ -230,16 +230,17 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 8%;
+    gap: 4%;
     margin-top: 5%;
 }
 
 .upgradePlanBox {
-    background-color: pink;
+    background-color: hsl(240, 100%, 95%);
     width: 20rem;
     height: 35rem;
     text-align: left;
-    padding-left: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 2%;
     border-radius: 15px;
 }
@@ -247,4 +248,29 @@ body {
 .upgradePlanBoxText {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.priceTag {
+    font-size: 2.5rem;
+}
+
+.purchaseButton {
+    background-color: hsl(240, 100%, 63%);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    border-radius: 30px;
+    margin-top: 0%;
+    margin-bottom: 7%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 1000;
+}
+
+.purchaseButton:hover {
+    background-color: hsl(240, 100%, 40%);
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 1000;
 }

@@ -77,6 +77,14 @@ function Dashboard() {
                         <div className={styles.upgradePlanBox}>
                             <h2 className={styles.upgradePlanBoxText}>Super</h2>
                             <p>Access to more premium assets</p>
+                            <h1 className={styles.priceTag}>$1.99 <span style={{fontSize: '1rem'}}>/ month</span></h1>
+                            <button className={styles.purchaseButton}>Start your free trial</button>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 1</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 2</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 3</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 4</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 5</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 6</p>
                         </div>
                         <div className={styles.upgradePlanBox}>
                             <h2 className={styles.upgradePlanBoxText}>Max</h2>
