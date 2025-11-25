@@ -1,6 +1,10 @@
 import styles from '../Create/Create.module.css';
+import { useState } from 'react';
 
 function Create() {
+    
+    const [cards, setCards] = useState([{ term: "", definition: "" }]);
+
     return (
         <>
             <div className={styles.createContainer}>
@@ -16,6 +20,12 @@ function Create() {
                     <input className={styles.titleInputField} placeholder='Title'/>
                     <textarea className={styles.titleInputField} id={styles.descriptionInputField} placeholder="Add a description... "></textarea>
                 </div>
+
+                {cards.map((card, index) => (
+                    <div key={index} className={styles.flashcardWrapper}>
+                        <h1>HELLO WORLD</h1>
+                    </div>
+                ))}
             </div>
         </>
     )

@@ -72,3 +72,12 @@
     padding-top: 1%;
     font-family: inherit;
 }
+
+.flashcardWrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 10rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}

@@ -262,7 +262,7 @@ body {
     height: 3rem;
     border-radius: 30px;
     margin-top: 0%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     transition: background-color 0.3s, box-shadow 0.3s;
     font-weight: 1000;
 }
@@ -273,4 +273,10 @@ body {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, box-shadow 0.3s;
     font-weight: 1000;
+}
+
+.priceTagDescription {
+    margin-top: -3%;
+    font-weight: 600;
+    margin-bottom: 8%;
 }

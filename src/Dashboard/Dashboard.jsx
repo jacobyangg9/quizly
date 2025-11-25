@@ -78,17 +78,27 @@ function Dashboard() {
                             <h2 className={styles.upgradePlanBoxText}>Super</h2>
                             <p>Access to more premium assets</p>
                             <h1 className={styles.priceTag}>$1.99 <span style={{fontSize: '1rem'}}>/ month</span></h1>
+                            <p className={styles.priceTagDescription}>Billed at $23.88 / year</p>
                             <button className={styles.purchaseButton}>Start your free trial</button>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 1</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 2</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 3</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 4</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 5</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Feature 6</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;No ads</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;40 questions per set</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;3 practice tests per week</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;10 rounds of practice per week</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Ability to print tests</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Complete access to some activities</p>
                         </div>
                         <div className={styles.upgradePlanBox}>
                             <h2 className={styles.upgradePlanBoxText}>Max</h2>
                             <p>Access to unlimited premium assets</p>
+                            <h1 className={styles.priceTag}>$3.99 <span style={{fontSize: '1rem'}}>/ month</span></h1>
+                            <p className={styles.priceTagDescription}>Billed at $47.88 / year</p>
+                            <button className={styles.purchaseButton}>Start your free trial</button>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;No ads</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited questions per set</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited practice tests</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited practice</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Ability to print tests</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Complete access to all activities</p>
                         </div>
                     </div>
             </div>
