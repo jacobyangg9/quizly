@@ -1,5 +1,6 @@
 import styles from '../Create/Create.module.css';
 import { useState } from 'react';
+import trashBin from '../Assets/delete.png';
 
 function Create() {
     
@@ -35,7 +36,8 @@ function Create() {
                     <div key={index} className={styles.flashcardWrapper}>
                         <input placeholder="Enter term" className={styles.flashcardInput} id={styles.flashcardTermInput} value={card.term} onChange={(e) => updateCards(index, "term", e.target.value)}></input>
                         <input placeholder="Enter definition" className={styles.flashcardInput} id={styles.flashcardDefInput} value={card.definition} onChange={(e) => updateCards(index, "definition", e.target.value)}></input>
-                    </div>
+                        <button className={styles.deleteFlashcardButton}><img src={trashBin} className={styles.trashBin}></img></button>
+                    </div> 
                 ))}
                 <div className={styles.addCardWrapper}>
                     <button className={styles.addCard} onClick={addCard}>Add Card</button>
