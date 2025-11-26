@@ -81,11 +81,11 @@ function Dashboard() {
                             <p className={styles.priceTagDescription}>Billed at $23.88 / year</p>
                             <button className={styles.purchaseButton}>Start your free trial</button>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;No ads</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;40 questions per set</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;7 chances</p>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;3 practice tests per week</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;10 rounds of practice per week</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Up to 40 questions per set</p>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Ability to print tests</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Complete access to some activities</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Complete access to more activities</p>
                         </div>
                         <div className={styles.upgradePlanBox}>
                             <h2 className={styles.upgradePlanBoxText}>Max</h2>
@@ -94,9 +94,9 @@ function Dashboard() {
                             <p className={styles.priceTagDescription}>Billed at $47.88 / year</p>
                             <button className={styles.purchaseButton}>Start your free trial</button>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;No ads</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited questions per set</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited chances</p>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited practice tests</p>
-                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited practice</p>
+                            <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Unlimited questions per set</p>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Ability to print tests</p>
                             <p>✓&nbsp;&nbsp;&nbsp;&nbsp;Complete access to all activities</p>
                         </div>

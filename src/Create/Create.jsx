@@ -5,6 +5,15 @@ function Create() {
     
     const [cards, setCards] = useState([{ term: "", definition: "" }]);
 
+    const updateCards = (index, field, value) => {
+        const newCards = [...cards];
+        newCards[index][field] = value;
+        setCards(newCards);
+    }
+
+    const addCard = () => {
+        setCards([...cards, { term: "", definition: "" }]);
+    }
 
     return (
         <>
@@ -24,12 +33,12 @@ function Create() {
 
                 {cards.map((card, index) => (
                     <div key={index} className={styles.flashcardWrapper}>
-                        <input placeholder="Enter term" className={styles.flashcardInput} id={styles.flashcardTermInput}></input>
-                        <input placeholder="Enter definition" className={styles.flashcardInput} id={styles.flashcardDefInput}></input>
+                        <input placeholder="Enter term" className={styles.flashcardInput} id={styles.flashcardTermInput} value={card.term} onChange={(e) => updateCards(index, "term", e.target.value)}></input>
+                        <input placeholder="Enter definition" className={styles.flashcardInput} id={styles.flashcardDefInput} value={card.definition} onChange={(e) => updateCards(index, "definition", e.target.value)}></input>
                     </div>
                 ))}
                 <div className={styles.addCardWrapper}>
-                    <button className={styles.addCard}>Add Card</button>
+                    <button className={styles.addCard} onClick={addCard}>Add Card</button>
                 </div>
             </div>
         </>
