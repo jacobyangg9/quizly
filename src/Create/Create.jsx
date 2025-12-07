@@ -40,7 +40,7 @@ function Create() {
                     <div key={index} className={styles.flashcardWrapper}>
                         <input placeholder="Enter term" className={styles.flashcardInput} id={styles.flashcardTermInput} value={card.term} onChange={(e) => updateCards(index, "term", e.target.value)}></input>
                         <input placeholder="Enter definition" className={styles.flashcardInput} id={styles.flashcardDefInput} value={card.definition} onChange={(e) => updateCards(index, "definition", e.target.value)}></input>
-                        <button className={styles.deleteFlashcardButton}><img src={trashBin} className={styles.trashBin} onClick={() => deleteCard(index)}></img></button>
+                        <button className={styles.deleteFlashcardButton} onClick={()=> deleteCard(index)}><img src={trashBin} className={styles.trashBin}></img></button>
                     </div> 
                 ))}
                 <div className={styles.addCardWrapper}>
