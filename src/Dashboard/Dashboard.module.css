@@ -43,6 +43,7 @@ body {
     margin-left: 5%;
     text-align: center;
     margin-top: 5%;
+    background-color: pink;
 }
 
 #mySetsMessage {
@@ -147,6 +148,8 @@ body {
 #createNewQuizPlus {
     width: 12%;
     height: 12%;
+    max-width: 35px;
+    max-height: 35px;
     margin-bottom: 6%;
     align-self: center;
 }
@@ -161,6 +164,8 @@ body {
 #createNewQuizImport {
     width: 12%;
     height: 12%;
+    max-width: 35px;
+    max-height: 35px;
     margin-bottom: 6%;
     align-self: center;
 }
@@ -279,4 +284,40 @@ body {
     margin-top: -3%;
     font-weight: 600;
     margin-bottom: 8%;
+}
+
+#savedSetsWrapper {
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.savedSetContainer {
+    width: 93%;
+    height: 10vh;
+    padding-left: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 2%;
+    border: 1px solid hsl(0, 0%, 90%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.savedSetContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.savedSetTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.savedSetCardCount {
+    font-size: 0.85rem;
+    color: hsl(0, 0%, 40%);
 }

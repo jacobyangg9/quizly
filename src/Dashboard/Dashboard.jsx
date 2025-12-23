@@ -12,6 +12,8 @@ function Dashboard() {
 
     const [activeSection, setActiveSection] = useState('home');
 
+    const savedSets = JSON.parse(localStorage.getItem("sets"))
+
     const toggleSection = (section) => {
         setActiveSection(section);
     }
@@ -56,11 +58,25 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div id={styles.mySetsMessageWrapper}>
-                    <img src={paperPlane} id={styles.setDecorImg}></img>
-                    <h1 id={styles.mySetsMessage}>Create a Set</h1>
-                    <p>Start by importing or creating your first set above.</p>
-                </div>
+                    <div id={styles.mySetsMessageWrapper}>
+                        {savedSets == null || savedSets.length === 0 ? (
+                        <div>
+                            <img src={paperPlane} id={styles.setDecorImg}></img>
+                            <h1 id={styles.mySetsMessage}>Create a Set</h1>
+                            <p>Start by importing or creating your first set above.</p>
+                    </div>
+                    ) : null}
+                    </div>
+                    {savedSets && savedSets.length > 0 && (
+                        <div id={styles.savedSetsWrapper}>
+                            {savedSets.map((set) => (
+                                <div className={styles.savedSetContainer}>
+                                    <h1 className={styles.savedSetTitle}>{set.title}</h1>
+                                    <p className={styles.savedSetCardCount}>{set.cards.length} cards</p>
+                                </div>
+                            ))}
+                    </div>
+                    )}
             </div>
             {/* NEWS */}
             <div className={styles.newsWrapper} style={activeSection === 'news' ? {} : { display: 'none' }}>
