@@ -1,5 +1,5 @@
 import styles from '../Create/Create.module.css';
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import trashBin from '../Assets/delete.png';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,6 +7,8 @@ function Create() {
     
     const [cards, setCards] = useState([{ term: "", definition: "" }]);
     const [title, setTitle] = useState("");
+
+    const [isVisible, setIsVisible] = useState(false);
 
     const navigate = useNavigate();
     const existingSets = JSON.parse(localStorage.getItem("sets")) || [];
@@ -23,6 +25,12 @@ function Create() {
             alert("Please ensure you have at least 4 cards and a title before creating the set.");
         }
     };
+
+    useEffect(() => {
+        if (cards.length >= 4 && title.trim() !== "") {
+            setIsVisible(true);
+        }
+    }, [cards, title]);
 
     const updateCards = (index, field, value) => {
         const newCards = [...cards];
@@ -54,7 +62,7 @@ function Create() {
                         <h1 className={styles.headerMessage}>Create a new set</h1>
                     </div>
                     <div className={styles.headerButtonWrapper}>
-                        <button className={styles.headerButton} onClick={navigateToDashboard}>Create</button>
+                        <button className={styles.headerButton} onClick={navigateToDashboard} style={{ display: isVisible ? 'block' : 'none'}}>Create</button>
                     </div>
                 </div>
                 <div className={styles.statsWrapper}>
